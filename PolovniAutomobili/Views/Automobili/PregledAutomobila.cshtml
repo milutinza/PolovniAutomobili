@@ -1,0 +1,15 @@
+﻿@using PolovniAutomobili.ViewModels
+@model SviAutomobiliViewModel
+
+<div class="row">
+    @foreach (var automobil in Model.SviAutomobili)
+    {
+        <div class="card col-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">@automobil.Marka - @automobil.Model</h5>
+                <p class="card-text">@automobil.Opis</p>
+                <a class="btn btn-primary" asp-controller="Automobili" asp-action="DetaljiOAutomobilu" asp-route-id="@automobil.Id">Detaljnije</a>
+            </div>
+        </div>
+    }
+</div>

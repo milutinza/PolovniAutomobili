@@ -1,0 +1,48 @@
+﻿@using PolovniAutomobili.Models
+@model Automobil
+
+<form asp-controller="Automobili" asp-action="DodajNoviAutomobil" method="post">
+    <div class="form-group" style="width:150px">
+        <label asp-for="@Model.Marka">Marka</label>
+        <input type="text" class="form-control" asp-for="@Model.Marka">
+    </div>
+    <div class="form-group" style="width:150px">
+        <label asp-for="@Model.Model">Model</label>
+        <input type="text" class="form-control" asp-for="@Model.Model">
+    </div>
+    <div class="form-group" style="width:150px">
+        <label asp-for="@Model.Godiste">Godiste</label>
+        <input type="number" class="form-control" asp-for="@Model.Godiste">
+    </div>
+    <div class="form-group" style="width:150px">
+        <label asp-for="@Model.ZapreminaMotora">Zapremina motora</label>
+        <input type="number" class="form-control" asp-for="@Model.ZapreminaMotora">
+    </div>
+    <div class="form-group" style="width:150px">
+        <label asp-for="@Model.Snaga">Snaga</label>
+        <input type="number" class="form-control" asp-for="@Model.Snaga">
+    </div>
+    <div class="form-group" style="width:150px">
+        <label asp-for="@Model.Gorivo">Gorivo</label>
+        <input type="text" class="form-control" asp-for="@Model.Gorivo">
+    </div>
+    <div class="form-group" style="width:150px">
+        <label asp-for="@Model.Karoserija">Karoserija</label>
+        <input type="text" class="form-control" asp-for="@Model.Karoserija">
+    </div>
+    <div class="form-group" style="width:150px">
+        <label asp-for="@Model.Opis">Opis</label>
+        <input type="text" class="form-control" asp-for="@Model.Opis">
+    </div>
+    <div class="form-group" style="width:150px">
+        <label asp-for="@Model.Cena">Cena</label>
+        <input type="number" class="form-control" asp-for="@Model.Cena">
+    </div>
+    <div class="form-group" style="width:150px">
+        <label asp-for="@Model.Kontakt">Kontakt</label>
+        <input type="text" class="form-control" asp-for="@Model.Kontakt">
+    </div>
+    <div>
+        <button type="submit">Dodaj</button>
+    </div>
+</form>

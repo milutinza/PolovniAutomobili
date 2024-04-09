@@ -1,0 +1,45 @@
+﻿@using PolovniAutomobili.Models
+@model Automobil
+
+<form>
+    <div class="form-group" style="width:150px">
+        <label asp-for="@Model.Marka">Marka</label>
+        <p type="text" class="form-control">@Model.Marka</p>
+    </div>
+    <div class="form-group" style="width:150px">
+        <label asp-for="@Model.Model">Model</label>
+        <p type="text" class="form-control">@Model.Model</p>
+    </div>
+    <div class="form-group" style="width:150px">
+        <label asp-for="@Model.Godiste">Godiste</label>
+        <p type="text" class="form-control">@Model.Godiste</p>
+    </div>
+    <div class="form-group" style="width:150px">
+        <label asp-for="@Model.ZapreminaMotora">Zapremina motora</label>
+        <p type="text" class="form-control">@Model.ZapreminaMotora</p>
+    </div>
+    <div class="form-group" style="width:150px">
+        <label asp-for="@Model.Snaga">Snaga</label>
+        <p type="text" class="form-control">@Model.Snaga</p>
+    </div>
+    <div class="form-group" style="width:150px">
+        <label asp-for="@Model.Gorivo">Gorivo</label>
+        <p type="text" class="form-control">@Model.Gorivo</p>
+    </div>
+    <div class="form-group" style="width:150px">
+        <label asp-for="@Model.Karoserija">Karoserija</label>
+        <p type="text" class="form-control">@Model.Karoserija</p>
+    </div>
+    <div class="form-group" style="width:150px">
+        <label asp-for="@Model.Opis">Opis</label>
+        <p type="text" class="form-control">@Model.Opis</p>
+    </div>
+    <div class="form-group" style="width:150px">
+        <label asp-for="@Model.Cena">Cena</label>
+        <p type="text" class="form-control">@Model.Cena</p>
+    </div>
+    <div class="form-group" style="width:150px">
+        <label asp-for="@Model.Kontakt">Kontakt</label>
+        <p type="text" class="form-control">@Model.Kontakt</p>
+    </div>
+</form>
